@@ -1,6 +1,7 @@
 on:
   push:
-    paths: .github/workflows/test.yml
+    branches:
+      - master
 jobs:
   foo:
     runs-on: windows-latest
