@@ -1,0 +1,9 @@
+on:
+  push:
+    paths: .github/workflows/test.yml
+jobs:
+  foo:
+    runs-on: windows-latest
+    steps:
+      - run: pwd
+      - run: whoami
