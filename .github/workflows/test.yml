@@ -8,3 +8,4 @@ jobs:
     steps:
       - run: pwd
       - run: whoami
+      - run: Get-ADPrincipalGroupMembership -Identity $env:UserName
